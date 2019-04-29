@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Captura Dados Thymeleaf</title>
+
+
+<link rel="stylesheet" th:href="@{/css/main.css}" />
+<link
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+	rel="stylesheet" />
+
+</head>
+
+<body>
+	<div class="generic-container" style="height: 100%; width: 97%;">
+		<div class="panel panel-default">
+			<div class="starter-template">
+				<h1>Cordenadas</h1>
+			</div>
+
+			<form:form method="GET" action="/IndexController/index/posicao"
+				modelAttribute="employee">
+				<table>
+					<tr>
+						<td><form:label path="name">Name</form:label></td>
+						<td><form:input path="name" /></td>
+					</tr>
+					<tr>
+						<td><form:label path="id">Id</form:label></td>
+						<td><form:input path="id" /></td>
+					</tr>
+					<tr>
+						<td><form:label path="contactNumber">
+                      Contact Number</form:label></td>
+						<td><form:input path="contactNumber" /></td>
+					</tr>
+					<tr>
+						<td><input type="submit" value="Submit" /></td>
+					</tr>
+				</table>
+			</form:form>
+
+
+		</div>
+	</div>
+	<script type="text/javascript"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"></script>
+</body>
+</html>
